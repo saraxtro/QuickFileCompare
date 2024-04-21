@@ -52,7 +52,7 @@ const DragAndDropComponent = () => {
 
   const calculateComparison = () => {
     if (crcValues[0] && crcValues[1]) {
-      const resultMessage = crcValues[0] === crcValues[1] ? 'Files are equal.' : 'Files are not equal.';
+      const resultMessage = crcValues[0] === crcValues[1] ? `Files are equal.\n CRC-32: ${crcValues[0]} ` : `Files are not equal.\n CRC-32 File 1: ${crcValues[0]}\n CRC-32 File 2: ${crcValues[1]}`;
       alert(resultMessage); // Using alert to show the result
     }
   };
